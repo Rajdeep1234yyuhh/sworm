@@ -1,38 +1,149 @@
-.App {
+body{
+  background-image: url(./bg.jpg) ;
+}
+
+#MG{
+  border: 1px solid rgba(41, 92, 41, 0.521);
+  background-color: black;
+  position: relative;
+  left:400px;  
+  width: 600px;
+  height: 500px;
+}
+#snake{
+  position: absolute;
+  background-image: url(/src/snake.png);
+  height: 5%;
+  width: 5%;
+  border-radius: 7px;
+  z-index: 1;
+  
+}
+#snake-food{
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  background: url(/src/fruit.png);
+  z-index: 2;
+  
+}
+#p{
+  position: absolute;
   text-align: center;
+  padding-left: 170px;
+  padding-top: 350px;
+  color: rgb(83, 98, 110);
+  font-weight: 500;
+}
+#p2{
+  position: absolute;
+  text-align: center;
+  font-size: 500%;
+  padding-left: 250px;
+  padding-top: 200px;
+  color: rgb(83, 98, 110);
+  font-weight: 500;
+}
+#obs1,#obs2,#obs3,#obs4{
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  background: url(/src/obs.png);
+  z-index: 0;
+ 
+}
+#btn1,#btn2,#btn3,#btn4{
+  cursor: pointer;
+}
+#all-btn{
+  position: relative;
+}
+#btn1{
+  position: absolute;
+  left: 150px;
+}
+#btn2{
+  position: absolute;
+  top: 60px;
+  left: 50px;
+
+}
+#btn3{
+  position: absolute;
+  left: 240px;
+  top:60px;
+}
+#btn4{
+  position: absolute;
+  left: 150px;
+  top:140px ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+
+@media all and (max-width:450px){
+  #MG{
+    width: 250px;
+    height: 230px;
+    left: 50px;
+
+  }}
+@media all and (max-width:450px){
+  #p{
+
+    padding-left: 150px;
+    padding-top: 50px;
+  
+  }}
+@media all and (max-width:450px){
+  
+  #p2{
+
+
+ 
+    padding-left: 50px;
+    padding-top: 50px;
+  
+  
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  @media all and (min-width:449px)
+  {
+    #btn1{
+      left:400px;
+      top:-20px;      
+    }
   }
-}
+@media all and (min-width:449px)
+  {
+    #btn2{
+      left:450px;
+      top:-20px;     
+    }
+  }
+  @media all and (min-width:449px)
+  {
+    #btn3{
+      left:500px;
+      top:-20px;  
+    }
+  }
+  @media all and (min-width:449px)
+  {
+    #btn4{
+      left:550px;
+      top:-20px;
+    }
+  }
+  @media all and (min-width:449px)
+  {
+    #all-btn{
+      max-height: 10px;
+    }
+  }
+
+
+
+
+
